@@ -81,7 +81,7 @@ export default function ProductDetails() {
 
           {/* ORDER BUTTON */}
           <a
-            href={`https://wa.me/8801XXXXXXXXX?text=I want to order ${product.name}`}
+            href={`https://wa.me/+8801797398145?text=I want to order ${product.name}`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center justify-center w-full lg:w-auto px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold transition"

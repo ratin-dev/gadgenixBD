@@ -106,7 +106,7 @@ duration-300
           </Link>
 
           <a
-            href={`https://wa.me/8801XXXXXXXXX?text=Hi, I'm interested in ${encodeURIComponent(product.name)}`}
+            href={`https://wa.me/+8801797398145?text=Hi, I'm interested in ${encodeURIComponent(product.name)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full h-12 rounded-xl bg-green-600 flex items-center justify-center font-semibold hover:bg-green-700 transition"

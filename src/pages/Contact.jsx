@@ -107,6 +107,7 @@ export default function Contact() {
             className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 transition py-3 rounded-xl font-semibold"
           >
             <Send size={18} />
+            
             Send via WhatsApp
           </button>
 

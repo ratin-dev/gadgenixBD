@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-8 text-center text-gray-500">
-        © {new Date().getFullYear()} Gadgenix BD. All rights reserved.
+        © {new Date().getFullYear()} Gadgenix BD. All rights reserved. Developed by <a className="text-blue-500 font-bold italic" target="_blank" href="https://www.facebook.com/MohammedRatin0/">Ratin</a>
       </div>
     </footer>
   );
