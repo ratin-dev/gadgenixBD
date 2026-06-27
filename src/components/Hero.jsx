@@ -1,54 +1,53 @@
 import { motion } from "framer-motion";
-import { ArrowRight, PlayCircle, ShieldCheck, Truck, BadgeCheck } from "lucide-react";
-import Button from "./ui/Button";
+import {
+  ArrowRight,
+  PlayCircle,
+  ShieldCheck,
+  Truck,
+  BadgeCheck,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
+import Button from "./ui/Button";
 import Badge from "./ui/Badge";
 import Container from "./ui/Container";
 
 export default function Hero() {
   return (
-    <section className="relative pt-6 pb-24">
-
+    <section className="relative pt-10 lg:pt-16 pb-16 lg:pb-24 overflow-hidden">
       <Container>
-
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* LEFT */}
-
-          <div>
+          <div className="text-center lg:text-left">
 
             <Badge>
               🚀 New Collection {new Date().getFullYear()}
             </Badge>
 
             <motion.h1
-              initial={{opacity:0,y:30}}
-              animate={{opacity:1,y:0}}
-              transition={{duration:.7}}
-              className="mt-8 text-6xl lg:text-7xl font-black leading-[1.05]"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="mt-6 text-4xl sm:text-5xl lg:text-7xl font-black leading-tight"
             >
               Experience
-              <br/>
-
+              <br />
               Premium
-              <br/>
-
+              <br />
               Technology.
             </motion.h1>
 
-            <p className="mt-8 text-gray-400 text-lg leading-8 max-w-xl">
-
+            <p className="mt-6 text-gray-400 text-base sm:text-lg leading-7 max-w-xl mx-auto lg:mx-0">
               Gadgenix BD brings authentic gadgets from world-class brands with
               official warranty, fast delivery and premium customer support.
-
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-10">
+            {/* Buttons */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
-                                            
-              <Link to="/shop">
-                <Button className="flex items-center">
+              <Link to="/shop" className="w-full sm:w-auto">
+                <Button className="w-full flex items-center justify-center">
                   Shop Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -56,157 +55,117 @@ export default function Hero() {
 
               <Button
                 variant="secondary"
-                className="flex items-center"
+                className="w-full sm:w-auto flex items-center justify-center"
               >
                 <PlayCircle className="mr-2 h-5 w-5" />
                 Watch Video
               </Button>
 
-
             </div>
 
-            <div className="grid grid-cols-3 gap-6 mt-16">
+            {/* Features */}
+            <div className="grid grid-cols-3 gap-4 mt-12 text-center">
 
               <div>
-
-                <ShieldCheck className="text-blue-400"/>
-
-                <h4 className="font-semibold mt-3">
-
+                <ShieldCheck className="mx-auto text-blue-400 w-8 h-8" />
+                <h4 className="mt-2 text-sm sm:text-base font-semibold">
                   Warranty
-
                 </h4>
-
               </div>
 
               <div>
-
-                <Truck className="text-blue-400"/>
-
-                <h4 className="font-semibold mt-3">
-
+                <Truck className="mx-auto text-blue-400 w-8 h-8" />
+                <h4 className="mt-2 text-sm sm:text-base font-semibold">
                   Delivery
-
                 </h4>
-
               </div>
 
               <div>
-
-                <BadgeCheck className="text-blue-400"/>
-
-                <h4 className="font-semibold mt-3">
-
+                <BadgeCheck className="mx-auto text-blue-400 w-8 h-8" />
+                <h4 className="mt-2 text-sm sm:text-base font-semibold">
                   Authentic
-
                 </h4>
-
               </div>
 
             </div>
-
           </div>
 
           {/* RIGHT */}
-
           <motion.div
-
-            animate={{
-              y:[0,-15,0]
-            }}
-
+            animate={{ y: [0, -12, 0] }}
             transition={{
-              repeat:Infinity,
-              duration:4
+              repeat: Infinity,
+              duration: 4,
             }}
-
-            className="relative"
-
+            className="relative flex justify-center"
           >
-
             {/* Glow */}
+            <div className="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full" />
 
-            <div className="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full"/>
-
-            {/* Product */}
-
+            {/* Image */}
             <img
-
               src="../../products/turboFan3600mAh.png"
-              className="relative rounded-[40px] "
-
+              alt="Turbo Fan"
+              className="relative w-72 sm:w-96 lg:w-[520px] object-contain"
             />
 
-            {/* Floating Card */}
-
+            {/* Price Card */}
             <motion.div
-
-              animate={{
-                y:[0,-10,0]
-              }}
-
+              animate={{ y: [0, -8, 0] }}
               transition={{
-                repeat:Infinity,
-                duration:3
+                repeat: Infinity,
+                duration: 3,
               }}
-
               className="
-              absolute
-              -left-10
-              bottom-16
-              glass
-              rounded-3xl
-              p-5
+                absolute
+                left-0
+                bottom-6
+                sm:-left-6
+                lg:-left-10
+                glass
+                rounded-2xl
+                px-4
+                py-3
               "
-
             >
-
-              <p className="text-sm text-gray-800">
-
+              <p className="text-xs text-gray-800">
                 Starting From
-
               </p>
 
-              <h3 className="text-3xl text-blue-900 font-bold">
-
+              <h3 className="text-xl lg:text-3xl text-blue-900 font-bold">
                 ৳500
-
               </h3>
-
             </motion.div>
 
+            {/* Rating */}
             <motion.div
-
-              animate={{
-                y:[0,10,0]
-              }}
-
+              animate={{ y: [0, 8, 0] }}
               transition={{
-                repeat:Infinity,
-                duration:5
+                repeat: Infinity,
+                duration: 5,
               }}
-
               className="
-              absolute
-              -right-8
-              top-20
-              glass
-              rounded-3xl
-              p-5
-              text-blue-900
+                absolute
+                right-0
+                top-6
+                sm:-right-4
+                lg:-right-8
+                glass
+                rounded-2xl
+                px-4
+                py-3
+                text-blue-900
+                text-sm
+                font-semibold
               "
-
             >
-
               ⭐ 4.9 Rating
-
             </motion.div>
 
           </motion.div>
 
         </div>
-
       </Container>
-
     </section>
-  )}
+  );
+}

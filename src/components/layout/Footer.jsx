@@ -37,12 +37,15 @@ export default function Footer() {
 
             <p className="flex items-center gap-3">
               <Phone size={18} />
-              +8801XXXXXXXXX
+              +8801797398145, 
+              +8801813138293, 
+              +8801560057694
+
             </p>
 
             <p className="flex items-center gap-3">
               <Mail size={18} />
-              info@gadgenixbd.com
+              gadgenixbd@gmail.com
             </p>
           </div>
         </div>
@@ -51,9 +54,31 @@ export default function Footer() {
           <h3 className="font-bold text-xl mb-6">Follow Us</h3>
 
           <div className="flex gap-4">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaYoutube />
+            <a
+    href="https://www.facebook.com/profile.php?id=61590513497275"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 rounded-full bg-white/10 hover:bg-blue-600 transition flex items-center justify-center"
+  >
+    <FaFacebookF />
+  </a>
+            <a
+    href="https://instagram.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 rounded-full bg-white/10 hover:bg-pink-600 transition flex items-center justify-center"
+  >
+    <FaInstagram />
+  </a>
+
+  <a
+    href="https://youtube.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 transition flex items-center justify-center"
+  >
+    <FaYoutube />
+  </a>
           </div>
         </div>
       </div>

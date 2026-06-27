@@ -41,12 +41,12 @@ export default function Contact() {
 
           <div className="flex items-center gap-4">
             <Phone className="text-blue-400" />
-            <span>+8801XXXXXXXXX</span>
+            <span>+8801797398145, +8801813138293, +8801560057694</span>
           </div>
 
           <div className="flex items-center gap-4">
             <Mail className="text-blue-400" />
-            <span>info@gadgenixbd.com</span>
+            <span>gadgenixbd@gmail.com</span>
           </div>
 
           <div className="flex items-center gap-4">

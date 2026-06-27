@@ -4,48 +4,97 @@ import { Link } from "react-router-dom";
 
 export default function CTA() {
   return (
-    <section className="py-28 px-6">
-
+    <section className="py-16 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         <motion.div
-          whileHover={{
-            scale: 1.02,
-          }}
-          className="relative overflow-hidden rounded-[40px] gradient p-20 text-center"
+          whileHover={{ scale: 1.01 }}
+          transition={{ duration: 0.3 }}
+          className="
+            relative
+            overflow-hidden
+            rounded-3xl
+            lg:rounded-[40px]
+            gradient
+            px-6
+            py-14
+            sm:px-10
+            sm:py-16
+            lg:px-20
+            lg:py-20
+            text-center
+          "
         >
 
-          <div className="absolute w-80 h-80 bg-white/10 rounded-full blur-3xl -top-24 -left-24"></div>
+          {/* Background Glow */}
+          <div className="absolute -top-24 -left-24 w-64 h-64 sm:w-80 sm:h-80 bg-white/10 rounded-full blur-3xl"></div>
 
-          <div className="absolute w-80 h-80 bg-black/20 rounded-full blur-3xl bottom-0 right-0"></div>
+          <div className="absolute -bottom-24 -right-24 w-64 h-64 sm:w-80 sm:h-80 bg-black/20 rounded-full blur-3xl"></div>
 
-          <h2 className="text-6xl font-black">
+          {/* Content */}
+          <div className="relative z-10">
 
-            Upgrade Your
-            <br />
-            Tech Lifestyle
+            <h2
+              className="
+                font-black
+                leading-tight
+                text-3xl
+                sm:text-4xl
+                md:text-5xl
+                lg:text-6xl
+              "
+            >
+              Upgrade Your
+              <br />
+              Tech Lifestyle
+            </h2>
 
-          </h2>
+            <p
+              className="
+                mt-6
+                max-w-2xl
+                mx-auto
+                text-sm
+                sm:text-base
+                lg:text-xl
+                text-white/80
+                leading-7
+              "
+            >
+              Discover premium gadgets with authentic warranty,
+              lightning-fast delivery and unbeatable prices.
+            </p>
 
-          <p className="mt-8 text-xl text-white/80 max-w-2xl mx-auto">
+            <Link
+              to="/shop"
+              className="
+                mt-10
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                rounded-full
+                bg-white
+                text-black
+                font-bold
+                px-6
+                py-3
+                sm:px-8
+                sm:py-4
+                hover:scale-105
+                transition-all
+                duration-300
+              "
+            >
+              Shop Now
+              <ArrowRight size={20} />
+            </Link>
 
-            Discover premium gadgets with authentic warranty,
-            lightning-fast delivery and unbeatable prices.
-
-          </p>
-
-          <button className="mt-12 bg-white text-black rounded-full px-10 py-5 font-bold flex items-center gap-3 mx-auto hover:scale-105 transition">
-
-            <Link to="/shop">Shop Now</Link>
-
-            <ArrowRight />
-
-          </button>
+          </div>
 
         </motion.div>
 
       </div>
-
     </section>
   );
 }
