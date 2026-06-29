@@ -106,7 +106,7 @@ export default function Hero() {
             <img
               src="../../products/turboFan3600mAh.png"
               alt="Turbo Fan"
-              className="relative w-72 sm:w-96 lg:w-[520px] object-contain"
+              className="relative w-72 sm:w-96 lg:w-[520px] object-contain rounded-4xl"
             />
 
             {/* Price Card */}
@@ -120,7 +120,7 @@ export default function Hero() {
                 absolute
                 left-0
                 bottom-6
-                sm:-left-6
+                sm:left-10
                 lg:-left-10
                 glass
                 rounded-2xl
@@ -128,11 +128,11 @@ export default function Hero() {
                 py-3
               "
             >
-              <p className="text-xs text-gray-800">
+              <p className="text-xs text-gray-200">
                 Starting From
               </p>
 
-              <h3 className="text-xl lg:text-3xl text-blue-900 font-bold">
+              <h3 className="text-xl lg:text-3xl text-white-900 font-bold">
                 ৳500
               </h3>
             </motion.div>
@@ -148,13 +148,13 @@ export default function Hero() {
                 absolute
                 right-0
                 top-6
-                sm:-right-4
+                sm:right-10
                 lg:-right-8
                 glass
                 rounded-2xl
                 px-4
                 py-3
-                text-blue-900
+                text-white-900
                 text-sm
                 font-semibold
               "

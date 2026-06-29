@@ -31,7 +31,7 @@ box-sizing:border-box;
     135deg,
     rgba(255,255,255,0.10),
     rgba(255,255,255,0.04)
-  );
+    );
 
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
