@@ -147,14 +147,14 @@ export default function Hero() {
               className="
                 absolute
                 right-0
-                top-6
-                sm:right-10
-                lg:-right-8
+                top-1
+                sm:right-30
+                lg:right-9
                 glass
                 rounded-2xl
                 px-4
                 py-3
-                text-white-900
+                text-blue-700
                 text-sm
                 font-semibold
               "
