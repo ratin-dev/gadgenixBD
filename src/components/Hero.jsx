@@ -110,7 +110,7 @@ export default function Hero() {
             />
 
             {/* Price Card */}
-            <motion.div
+            {/* <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{
                 repeat: Infinity,
@@ -128,14 +128,14 @@ export default function Hero() {
                 py-3
               "
             >
-              <p className="text-xs text-gray-200">
+              <p className="text-xs text-gray-400">
                 Starting From
               </p>
 
-              <h3 className="text-xl lg:text-3xl text-white-900 font-bold">
+              <h3 className="text-xl lg:text-3xl text-blue-500 font-bold shadow-gray-300">
                 ৳500
               </h3>
-            </motion.div>
+            </motion.div> */}
 
             {/* Rating */}
             <motion.div

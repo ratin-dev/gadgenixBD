@@ -2,7 +2,7 @@ export const products = [
   // =========================
   // ADAPTER
   // =========================
-  {
+{
   id: 190,
   name: "360 Degree Rotatable 6 Layer Water Filter",
   slug: "6-Layer-360-water-filter",
